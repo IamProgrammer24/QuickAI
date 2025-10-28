@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 
 const HeroSection = () => {
 
-  const navigate = useNavigate;
+  const navigate = useNavigate();
 
   return (
     <div
