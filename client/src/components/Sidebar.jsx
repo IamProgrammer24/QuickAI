@@ -19,7 +19,7 @@ const navItems = [
   { to: "/ai/blog-titles", label: "Blog Titles", Icon: Hash },
   { to: "/ai/generate-images", label: "Generate Images", Icon: Images },
   { to: "/ai/remove-background", label: "Remove Background", Icon: Eraser },
-  { to: "/ai/remove-object", label: "Remoce Object", Icon: Scissors },
+  { to: "/ai/remove-object", label: "Remove Object", Icon: Scissors },
   { to: "/ai/review-resume", label: "Review Resume", Icon: FileText },
   { to: "/ai/community", label: "Community", Icon: Users },
 ];
@@ -69,7 +69,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
           <img src={user.imageUrl} className="w-8 rounded-full" alt="profile" />
           <div>
             <h1 className="text-sm font-medium">{user.fullName}</h1>
-            <p className="text-xs text-gray-500"> <Protect plan=" premium " fallback=" Free ">
+            <p className="text-xs text-gray-500"> <Protect plan="premium " fallback=" Free ">
               Premium 
             </Protect>
              plan</p>

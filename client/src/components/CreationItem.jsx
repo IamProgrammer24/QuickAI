@@ -23,7 +23,7 @@ const CreationItem = ({ item }) => {
 
       {expanded && (
         <div>
-          {item.type === "image" ? (
+          {item.type === "Image" ? (
             <div>
               <img
                 src={item.content}
