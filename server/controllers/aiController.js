@@ -5,8 +5,7 @@ import GenerateBlogTitle from "../models/GenerateBlogTitle.js";
 import axios from "axios";
 import { v2 as cloudinary } from "cloudinary";
 import GenerateImage from "../models/GenerateImage.js";
-import fs from "fs";
-import { createRequire } from "module";
+import pdf from "pdf-parse-new";
 import ReviewResume from "../models/ReviewResume.js";
 import FormData from "form-data";
 import getDataUri from "../configs/datauri.js";
@@ -397,7 +396,7 @@ export const resumeReview = async (req, res) => {
 
     // Parse PDF from buffer
     const pdfData = await pdf(resume.buffer);
-
+    
     const prompt = `Review the following resume and provide constructive feedback on its strengths,
 weaknesses, and areas for improvement.
 
